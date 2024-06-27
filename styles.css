@@ -1,0 +1,23 @@
+.sobre {
+  /* padding: 50px; */
+}
+
+.sobre img {
+  object-position: 100% 20%;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* telas grandes */
+@media screen and (min-width: 1200px) {
+  html {
+    /* background: red; */
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+  }
+}

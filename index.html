@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Dra Júlia Silveira</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Currículo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#atuacao">Áreas de atuação</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#convenios">Convênios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#agendamento">Agendamento e atendimento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#telemedicina">Telemedicina</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="sobre d-flex flex-column-reverse flex-md-row gap-3 p-4 mt-5">
+      <div class="w-sm-100 w-md-50 d-flex flex-column justify-content-center">
+        <h1>Dra Júlia Silveira</h1>
+        <h6 class="text-body-secondary">CRM xxxxx</h6>
+        <ul>
+          <li>Formada pela Universidade Federal de Santa Maria</li>
+          <li>Residência médica em Muitas Coisas Interessantes no hospital dos milico</li>
+          <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          <li>Vel ad laborum similique cumque harum, modi corrupti ipsa, eligendi dignissimos </li>
+        </ul>
+      </div>
+      <img class="w-sm-100 w-md-50" src="./assets/foto2.JPG" alt="" srcset="">
+    </section>
+
+    <section class="convenios p-4" id="atuacao">
+      <h1 class="mb-3">Áreas de atuação</h1>
+      <div class="d-flex gap-2 flex-column flex-md-row">
+        <div class="w-100 w-md-50 card p-4">
+          <h5>Cuidados Preventivos e Check-ups Regulares</h5>
+          <ul>
+            <li>Exames de rotina</li>
+            <li>Vacinação</li>
+            <li>Orientação sobre hábitos de vida saudáveis</li>
+            <li>Rastreamento de doenças</li>
+          </ul>
+        </div>
+        <div class="w-100 w-md-50 card p-4">
+          <h5>Acompanhamento de Doenças Crônicas</h5>
+          <ul>
+            <li>Resfriados e gripes</li>
+            <li>Infecções respiratórias</li>
+            <li>Infecções urinárias</li>
+            <li>Hipertensão arterial</li>
+            <li>Diabetes</li>
+            <li>Dislipidemias (colesterol alto)</li>
+            <li>Doenças gastrointestinais</li>
+          </ul>
+        </div>
+      </div>
+      <div class="d-flex gap-2 my-2 flex-column flex-md-row">
+        <div class="w-100 w-md-50 card p-4">
+          <h5>Diagnóstico e Tratamento de Doenças Comuns</h5>
+          <ul>
+            <li>Diabetes</li>
+            <li>Hipertensão</li>
+            <li>Asma</li>
+            <li>Doenças cardiovasculares</li>
+            <li>Doenças pulmonares crônicas</li>
+          </ul>
+        </div>
+        <div class="w-100 w-dm-50 card p-4">
+          <h5>Encaminhamentos e Coordenação de Cuidados</h5>
+          <ul>
+            <li>Encaminhamento para especialistas quando necessário</li>
+            <li>Coordenação do cuidado com outros profissionais de saúde</li>
+            <li>Acompanhamento e revisão de tratamentos prescritos por outros médicos</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="convenios p-4" id="convenios">
+      <h1>Convênios</h1>
+
+    </section>
+
+    <section class="atendimento p-4" id="agendamento">
+      <h1>Agendamento e Atendimento</h1>
+
+    </section>
+
+    <section class="telemedicina p-4" id="telemedicina">
+      <div class="w-sm-100 w-md-50 d-flex flex-column justify-content-center align-items-start my-4">
+        <h1>Consulte via Telemedicina</h1>
+        <p>A Telemedicina é uma maneira inovadora e conveniente de realizar consultas médicas à distância, utilizando tecnologia de comunicação, como vídeo chamadas. Este método proporciona acesso rápido e fácil a cuidados médicos de qualidade, independentemente de onde você esteja.</p>
+        <button type="button" class="btn btn-primary">Faça o seu agendamento</button>
+      </div>
+
+      <h2>Vantagens da Telemedicina</h2>
+      <ul>
+        <li>Atendimento do conforto da sua casa</li>
+        <li>Redução do tempo de espera para consultas</li>
+        <li>Minimiza a exposição a ambientes contaminados</li>
+        <li>Facilidade em manter o acompanhamento com a médica</li>
+      </ul>
+
+      <h3>Como é feita a consulta</h3>
+      <ul>
+        <li>Primeiro, é feito o agendamento</li>
+        <li>Paciente recebe o link da video chamada</li>
+        <li>No horário combinado a consulta é realizada</li>
+      </ul>
+
+      <h3>Quais tipos de problemas de saúde podem ser tratados via Telemedicina?</h3>
+      <ul>
+        <li>Consultas de acompanhamento</li>
+        <li>Avaliação de sintomas não urgentes</li>
+        <li>Avaliar sintomas e encaminhar o paciente para o especialista certo para o problema apresentado</li>
+        <li>Diagnosticar e tratar doenças como gripe, sinusite, virose, amigdalite, dengue, entre outras</li>
+        <li>Esclarecer dúvidas quanto ao quadro clínico apresentado</li>
+        <li>Analisar digitalmente laudos de exames realizados pelo paciente</li>
+      </ul>
+
+      <h3>Dúvidas Frequentes</h3>
+      <p>A Telemedicina representa um avanço significativo na forma como cuidamos da saúde, proporcionando acesso conveniente e eficiente a serviços médicos de qualidade. Se você tiver dúvidas sobre se a Telemedicina é adequada para sua situação, entre em contato conosco para mais informações.</p>
+
+
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              O que preciso para uma consulta de Telemedicina?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Você precisará de um dispositivo com acesso à internet (smartphone, tablet ou computador) e um local tranquilo e bem iluminado para a consulta.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Como garantir a qualidade da consulta de Telemedicina?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Para garantir uma consulta de qualidade, escolha um <strong>ambiente tranquilo</strong>, use uma <strong>conexão de internet estável</strong> e prepare-se para a consulta, tendo em mãos todas as informações médicas relevantes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              E se eu tiver problemas técnicos durante a consulta?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Se você tiver problemas técnicos durante a consulta, entre em contato conosco imediatamente para que possamos ajudá-lo a resolver a situação ou reagendar a consulta, se necessário.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              O que acontece se eu precisar de atendimento presencial?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Se durante a consulta a médica determinar que é necessário um atendimento presencial, você será orientado sobre os próximos passos e poderá agendar uma consulta no consultório.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Como são feitas as prescrições e pedidos de exames?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Se necessário, a médica pode prescrever medicamentos e solicitar exames durante a consulta. As prescrições podem ser enviadas eletronicamente para a farmácia de sua escolha, e os pedidos de exames podem ser acessados em laboratórios conveniados.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+    </section>
+
+  </main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
