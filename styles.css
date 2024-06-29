@@ -1,5 +1,58 @@
+:root {
+  --green: #51675c;
+}
+
+html,
+body {
+  background: #d6c7ad33;
+}
+
+.btn-primary {
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.btn:hover,
+.btn:active {
+  background: var(--green) !important;
+  border-color: var(--green) !important;
+}
+
+.accordion-item {
+  background: transparent;
+}
+
+.accordion-header {
+  /* background: d6c7ad69; */
+}
+
+.accordion-header button {
+  background: #cbc8c4;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #cbc8c4;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
 .sobre {
   /* padding: 50px; */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #605543;
+}
+
+svg path {
+  fill: #605543;
+}
+
+.navbar {
+  background: var(--green);
 }
 
 .sobre img {
