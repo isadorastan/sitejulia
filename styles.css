@@ -98,8 +98,7 @@ img {
 }
 
 .navbar {
-  background: var(--secondary-color);
-  /* height: 84px; */
+  background: var(--primary-color);
   padding: 20px 0;
 }
 
