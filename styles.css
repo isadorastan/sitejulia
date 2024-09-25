@@ -1,21 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&display=swap");
+
+/* font-family: "Sora", sans-serif; */
+/* font-family: "Playfair Display", serif; */
+
 :root {
   --green: #51675c;
+  --primary-color: #919587;
+  --secondary-color: #636251;
+  --suport-color: #f5f5f5;
 }
 
 html,
 body {
-  background: #d6c7ad33;
+  background: #fff;
+  font-family: "Sora", sans-serif;
+  color: var(--primary-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+img {
+  object-fit: contain;
+  width: fit-content;
 }
 
 .btn-primary {
-  background: var(--green);
-  border-color: var(--green);
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+  border-radius: 8px;
+  padding: 10px 30px;
+  border: 0px;
+  height: 58px;
+  width: fit-content;
 }
 
 .btn:hover,
 .btn:active {
-  background: var(--green) !important;
-  border-color: var(--green) !important;
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 .accordion-item {
@@ -27,50 +68,313 @@ body {
 }
 
 .accordion-header button {
-  background: #cbc8c4;
+  background: var(--primary-color);
+  color: white;
 }
 
 .accordion-button:not(.collapsed) {
-  background: #cbc8c4;
+  background: #7f8376;
+  color: white;
+}
+
+.accordion-button::after {
+  /* order: -1;
+  margin-left: 0;
+  margin-right: 0.5em; */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  /* background-color: white; */
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
 }
 
 .accordion-button:focus {
   box-shadow: none;
 }
 
-.sobre {
-  /* padding: 50px; */
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: #605543;
-}
-
-svg path {
-  fill: #605543;
+.accordion-body {
+  color: var(--primary-color);
 }
 
 .navbar {
-  background: var(--green);
+  background: var(--secondary-color);
+  /* height: 84px; */
+  padding: 20px 0;
 }
 
-.sobre img {
-  object-position: 100% 20%;
+.navbar-brand {
+  font-family: "Alice", serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.vertical-center {
+  justify-content: center;
+}
+
+.w-100 {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 4px;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Alice", serif;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: "Alice", serif;
+  color: var(--primary-color);
+}
+
+header {
+  margin-top: 84px;
+}
+
+.container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header .tags ul {
+  list-style: none;
+}
+
+header .tags li {
+  border: 1px solid var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 16px;
+  width: fit-content;
+  transition: all 0.5s;
+  background: transparent;
+}
+
+header .tags li:hover {
+  background: var(--primary-color);
+  color: white;
+  scale: 1.05;
+}
+
+.atuacao {
+  padding: 50px 30px;
+  background: var(--suport-color);
+}
+
+.atuacao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.atuacao .box {
+  background: #91958726;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.telemedicina img {
+  width: 50%;
+}
+
+.vantagens ul {
+  list-style: none;
+  max-width: 600px;
+  margin: auto;
+  padding: 0;
+}
+
+.vantagens ul li {
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+  margin: 10px auto;
+  width: 100%;
+  padding: 8px 15px 8px 60px;
+  position: relative;
+  height: 42px;
+}
+
+.vantagens ul li:before {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 100%;
+  background-color: #51675c;
+  border: 1px solid #51675c;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+
+.vantagens ul li:after {
+  position: absolute;
+  content: "";
+  width: 42px;
+  height: 42px;
+  left: 10px;
+  top: 10px;
+  width: 100%;
+  background: url("./assets/check.png") no-repeat;
+  z-index: 100;
+}
+
+.consulta ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 180px;
+  padding: 0;
+}
+
+.consulta ul li {
+  max-width: 217px;
+  text-align: center;
+  position: relative;
+}
+
+.consulta ul li::before {
+  content: "1";
+  font-size: 40px;
+  text-align: center;
+  width: 87px;
+  height: 87px;
+  background: var(--secondary-color);
+  color: white;
+  position: absolute;
+  border-radius: 50%;
+  top: -100px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.consulta ul li:nth-child(2)::before {
+  content: "2";
+}
+
+.consulta ul li:nth-child(3)::before {
+  content: "3";
+}
+
+.consulta ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: var(--secondary-color);
+  top: -50px;
+  left: 87px;
+}
+
+.consulta ul li:nth-child(3)::after {
+  width: 0;
+}
+
+.perguntas .description {
+  max-width: 700px;
+  margin: auto;
 }
 
 /* telas grandes */
-@media screen and (min-width: 1200px) {
-  html {
-    /* background: red; */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 32px;
   }
 
-  main {
-    max-width: 1100px;
-    margin: auto;
+  header {
+    height: unset;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  header img {
+    height: 400px;
+  }
+
+  header .tags ul {
+    padding: 0;
+    margin: 15px 0;
+    padding: 0 20px;
+  }
+
+  header .tags li {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .wrap {
+    gap: 5px;
+  }
+
+  .atuacao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .telemedicina {
+    overflow: hidden;
+  }
+
+  .telemedicina img {
+    width: 120%;
+    transform: translate(-10%, 0);
+  }
+
+  .vantagens ul li {
+    font-size: 14px;
+    border: 0;
+  }
+
+  .consulta ul {
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  .consulta ul li {
+    text-align: left;
+    margin-left: 100px;
+  }
+
+  .consulta ul li::before {
+    left: -60px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .consulta ul li::after {
+    width: 1px;
+    height: 100px;
+    left: -60px;
+    top: 100%;
   }
 }
